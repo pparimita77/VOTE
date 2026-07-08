@@ -1,3 +1,12 @@
-python-telegram-bot[job-queue]==21.10
-pymongo[srv]
+# For building the Telegram Bot
+python-telegram-bot[job-queue]>=21.0
+
+# For asynchronous MongoDB operations
+motor>=3.0
+
+# For environment variable management
 python-dotenv
+
+# Required dependencies for the drivers above
+pymongo>=4.0
+dnspython>=2.0
